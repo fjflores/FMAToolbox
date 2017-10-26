@@ -1,45 +1,45 @@
-% Freely Moving Animal (FMA) Toolbox
-%
-%  INTRODUCTION
-%
-%    The purpose of the Freely Moving Animal (FMA) Toolbox is to help analyze
-%    electrophysiological and behavioral data recorded from freely moving animals.
-%
-%    These data typically include broadband brain signals (e.g. local field potentials),
-%    spike data (timestamps as well as full waveforms), moment-to-moment position of
-%    the animal, and behavioral events (stimulus presentation, photodetector crossing,
-%    brain stimulation, etc.)
-%
-%    <a href="http://fmatoolbox.sourceforge.net/">FMAToolbox</a> is part of a larger data analysis framework, including <a href="http://klusters.sourceforge.net/">Klusters</a> (a powerful
-%    and easy-to-use cluster cutting application), <a href="http://neuroscope.sourceforge.net/">NeuroScope</a> (an advanced viewer for
-%    electrophysiological and behavioral data), and <a href="http://ndmanager.sourceforge.net/">NDManager</a> (a simple application to
-%    manage recording parameters and data preprocessing).
-%
-%  INSTALLATION
-%
-%    The easiest way to install FMAToolbox is using the <a href="matlab:run pathtool">pathtool</a>. Click 'Add with subfolders...'
-%    and select the 'FMAToolbox' directory.
-%
-%    For efficiency reasons, the toolbox includes a few functions in C/C++. These can be
-%    easily compiled for your platform. In the command window, type:
-%
-%      >> compilefma;
-%
-%    or simply click <a href="matlab:run compilefma">here</a>.
-%
-%    Some functions in the toolbox depend on other Matlab toolboxes:
-%
-%      * <a href="http://www.artefact.tk/software/matlab/xml/">xmltree</a> to read XML parameter files
-%      * <a href="http://www.chronux.org">chronux</a> to perform time-frequency analyses
-%      * <a href="http://sourceforge.net/projects/mym/">mYm</a> to provide database functionality
-%      * <a href="http://sites.google.com/site/oliverwoodford/software/export_fig">export_fig</a> (optional) to export figures as PNG, EPS, PDF, etc.
-%
-%  LICENSE
-%
-%    This toolbox was developed by <a href="mailto:michael.zugaro@college-de-france.fr?subject=FMAToolbox" title="FMAToolbox">Michaël Zugaro</a> at the <a href="http://www.lppa.college-de-france.fr/EN/equipes/people/Zugaro/index.htm">LPPA</a> (CRNS-Collège de France, Paris,
-%    France). It is free software distributed under the <a href="http://www.gnu.org/licenses/gpl.html">General Public License (GPL)</a>.
-%
-%  CONTENTS
+Freely Moving Animal (FMA) Toolbox
+----------------------------------
+
+INTRODUCTION
+============
+
+The purpose of the Freely Moving Animal (FMA) Toolbox is to help analyze
+electrophysiological and behavioral data recorded from freely moving animals.
+These data typically include broadband brain signals (e.g. local field potentials),
+spike data (timestamps as well as full waveforms), moment-to-moment position of
+the animal, and behavioral events (stimulus presentation, photodetector crossing,
+brain stimulation, etc.)
+
+<a href="http://fmatoolbox.sourceforge.net/">FMAToolbox</a> is part of a larger data analysis framework, including <a href="http://klusters.sourceforge.net/">Klusters</a> (a powerful
+and easy-to-use cluster cutting application), <a href="http://neuroscope.sourceforge.net/">NeuroScope</a> (an advanced viewer for electrophysiological and behavioral data), and <a href="http://ndmanager.sourceforge.net/">NDManager</a> (a simple application to manage recording parameters and data preprocessing).
+
+INSTALLATION
+============
+
+The easiest way to install FMAToolbox is using the <a href="matlab:run pathtool">pathtool</a>. Click 'Add with subfolders...'
+and select the 'FMAToolbox' directory.
+
+For efficiency reasons, the toolbox includes a few functions in C/C++. These can be
+easily compiled for your platform. In the command window, type:
+
+compilefma;
+
+or simply click <a href="matlab:run compilefma">here</a>.
+
+Some functions in the toolbox depend on other Matlab toolboxes:
+
+ * <a href="http://www.artefact.tk/software/matlab/xml/">xmltree</a> to read XML parameter files
+ * <a href="http://www.chronux.org">chronux</a> to perform time-frequency analyses
+ * <a href="http://sourceforge.net/projects/mym/">mYm</a> to provide database functionality
+ * <a href="http://sites.google.com/site/oliverwoodford/software/export_fig">export_fig</a> (optional) to export figures as PNG, EPS, PDF, etc.
+
+LICENSE
+
+ This toolbox was developed by <a href="mailto:michael.zugaro@college-de-france.fr?subject=FMAToolbox" title="FMAToolbox">Michaël Zugaro</a> at the <a href="http://www.lppa.college-de-france.fr/EN/equipes/people/Zugaro/index.htm">LPPA</a> (CRNS-Collège de France, Paris,
+France). It is free software distributed under the <a href="http://www.gnu.org/licenses/gpl.html">General Public License (GPL)</a>.
+
+CONTENTS
 %
 %    The toolbox is organized in distinct functional categories:
 %
