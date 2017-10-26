@@ -99,7 +99,7 @@ for i = 1:2:length(varargin),
 			end
 		case 'show',
 			show = varargin{i+1};
-			if ~isstring(show,'on','off'),
+			if ~isstringfma(show,'on','off'),
 				error('Incorrect value for property ''show'' (type ''help <a href="matlab:help FindRipples">FindRipples</a>'' for details).');
 			end
 		case {'baseline','restrict'},

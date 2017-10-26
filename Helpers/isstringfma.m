@@ -1,8 +1,8 @@
-%isstring - Test if parameter is an (admissible) character string.
+%isstringfma - Test if parameter is an (admissible) character string.
 %
 %  USAGE
 %
-%    test = isstring(x,string1,string2,...)
+%    test = isstringfma(x,string1,string2,...)
 %
 %    x              item to test
 %    string1...     optional list of admissible strings
@@ -19,11 +19,11 @@
 % the Free Software Foundation; either version 3 of the License, or
 % (at your option) any later version.
 
-function test = isstring(x,varargin)
+function test = isstringfma(x,varargin)
 
 % Check number of parameters
 if nargin < 1,
-  error('Incorrect number of parameters (type ''help <a href="matlab:help isstring">isstring</a>'' for details).');
+  error('Incorrect number of parameters (type ''help <a href="matlab:help isstringfma">isstringfma</a>'' for details).');
 end
 
 test = true;

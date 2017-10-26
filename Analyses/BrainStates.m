@@ -81,7 +81,7 @@ for i = 1:2:length(varargin),
 			end
 		case 'method',
 			method = lower(varargin{i+1});
-			if ~isstring(method,'pca','direct','ratios'),
+			if ~isstringfma(method,'pca','direct','ratios'),
 				error('Incorrect value for property ''method'' (type ''help <a href="matlab:help BrainStates">BrainStates</a>'' for details).');
 			end
 		case 'ncomponents',
@@ -91,7 +91,7 @@ for i = 1:2:length(varargin),
 			end
 		case 'show',
 			show = lower(varargin{i+1});
-			if ~isstring(show,'kmeans','clusters','all','none'),
+			if ~isstringfma(show,'kmeans','clusters','all','none'),
 				error('Incorrect value for property ''show'' (type ''help <a href="matlab:help BrainStates">BrainStates</a>'' for details).');
 			end
 		otherwise,

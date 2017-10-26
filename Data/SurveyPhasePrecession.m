@@ -78,12 +78,12 @@ for i = 1:2:length(varargin),
 			end
 		case 'figures',
 			figs = lower(varargin{i+1});
-			if ~isstring(figs,'single','multiple'),
+			if ~isstringfma(figs,'single','multiple'),
 				error('Incorrect value for property ''figs'' (type ''help <a href="matlab:help SurveyPhasePrecession">SurveyPhasePrecession</a>'' for details).');
 			end
 		case 'track',
 			track = lower(varargin{i+1});
-			if ~isstring(track,'linear','circular'),
+			if ~isstringfma(track,'linear','circular'),
 				error('Incorrect value for property ''track'' (type ''help <a href="matlab:help SurveyPhasePrecession">SurveyPhasePrecession</a>'' for details).');
 			end
 		otherwise,

@@ -61,7 +61,7 @@ while i <= length(varargin),
 	switch(lower(varargin{i})),
 		case 'passband',
 			passband = varargin{i+1};
-			if isstring(passband),
+			if isstringfma(passband),
 				switch(lower(passband)),
 					case 'delta',
 						passband = [0 4];

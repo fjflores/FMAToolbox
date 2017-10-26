@@ -64,12 +64,12 @@ for i = 1:2:length(varargin),
 	switch(lower(varargin{i})),
 		case 'mode',
 			mode = lower(varargin{i+1});
-			if ~isstring(mode,'clean','all'),
+			if ~isstringfma(mode,'clean','all'),
 				error('Incorrect value for property ''mode'' (type ''help <a href="matlab:help GetPositions">GetPositions</a>'' for details).');
 			end
 		case 'coordinates',
 			coordinates = lower(varargin{i+1});
-			if ~isstring(coordinates,'video','normalized','real'),
+			if ~isstringfma(coordinates,'video','normalized','real'),
 				error('Incorrect value for property ''coordinates'' (type ''help <a href="matlab:help GetPositions">GetPositions</a>'' for details).');
 			end
 		case 'pixel',
@@ -79,7 +79,7 @@ for i = 1:2:length(varargin),
 			end
 		case 'discard',
 			discard = lower(varargin{i+1});
-			if ~isstring(discard,'partial','none'),
+			if ~isstringfma(discard,'partial','none'),
 				error('Incorrect value for property ''discard'' (type ''help <a href="matlab:help GetPositions">GetPositions</a>'' for details).');
 			end
 		otherwise,

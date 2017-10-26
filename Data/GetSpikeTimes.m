@@ -82,7 +82,7 @@ for i = 1:2:length(varargin),
 	switch(lower(varargin{i})),
 		case 'output',
 			output = lower(varargin{i+1});
-			if ~isstring(output,'time','full'),
+			if ~isstringfma(output,'time','full'),
 				error('Incorrect value for property ''output'' (type ''help <a href="matlab:help GetSpikeTimes">GetSpikeTimes</a>'' for details).');
 			end
 		otherwise,

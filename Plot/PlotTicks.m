@@ -65,7 +65,7 @@ for i = 1:2:length(varargin),
 
 		case 'direction',
 			direction = lower(varargin{i+1});
-			if ~isstring(direction,'h','v'),
+			if ~isstringfma(direction,'h','v'),
 				error('Incorrect value for property ''direction'' (type ''help <a href="matlab:help PlotTicks">PlotTicks</a>'' for details).');
 			end
 

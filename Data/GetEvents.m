@@ -76,7 +76,7 @@ for i = 1:2:length(varargin),
 	switch(lower(varargin{i})),
 		case 'output',
 			output = lower(varargin{i+1});
-			if ~isstring(output,'times','indices','logical','descriptions'),
+			if ~isstringfma(output,'times','indices','logical','descriptions'),
 				error('Incorrect value for property ''output'' (type ''help <a href="matlab:help GetEvents">GetEvents</a>'' for details).');
 			end
 		otherwise,

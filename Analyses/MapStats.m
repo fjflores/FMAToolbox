@@ -106,13 +106,13 @@ for i = 1:2:length(varargin),
 
 		case 'type',
 			type = lower(varargin{i+1});
-			if (nDims == 1 && ~isstring(type,'c','l')) || (nDims == 2 && ~isstring(type,'cc','cl','lc','ll')),
+			if (nDims == 1 && ~isstringfma(type,'c','l')) || (nDims == 2 && ~isstringfma(type,'cc','cl','lc','ll')),
 				error('Incorrect value for property ''type'' (type ''help <a href="matlab:help MapStats">MapStats</a>'' for details).');
 			end
 
 		case 'debug',
 			debug = lower(varargin{i+1});
-			if ~isstring(debug,'on','off'),
+			if ~isstringfma(debug,'on','off'),
 				error('Incorrect value for property ''debug'' (type ''help <a href="matlab:help MapStats">MapStats</a>'' for details).');
 			end
 			debug = strcmp(debug,'on');

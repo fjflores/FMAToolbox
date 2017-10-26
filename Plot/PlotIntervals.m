@@ -38,10 +38,10 @@ else
 	direction = lower(direction);
 end
 
-if ~isstring(style,'bars','rectangles'),
+if ~isstringfma(style,'bars','rectangles'),
 	error('Incorrect value for property ''style'' (type ''help <a href="matlab:help PlotIntervals">PlotIntervals</a>'' for details).');
 end
-if ~isstring(direction,'h','v'),
+if ~isstringfma(direction,'h','v'),
 	error('Incorrect value for property ''direction'' (type ''help <a href="matlab:help PlotIntervals">PlotIntervals</a>'' for details).');
 end
 

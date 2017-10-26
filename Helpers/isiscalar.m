@@ -25,7 +25,7 @@
 %
 %  SEE ALSO
 %
-%    See also isdmatrix, isdvector, isdscalar, isimatrix, isivector, isstring,
+%    See also isdmatrix, isdvector, isdscalar, isimatrix, isivector, isstringfma,
 %    islscalar, islvector, islmatrix.
 %
 

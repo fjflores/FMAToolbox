@@ -83,7 +83,7 @@ if isdvector(default),
 	else
 		d = [d ' '];
 	end
-elseif isstring(default),
+elseif isstringfma(default),
 	d = ['''' default ''' '];
 else
 	d = '';

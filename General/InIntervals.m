@@ -64,7 +64,7 @@ for i = 1:2:length(varargin),
 	switch(lower(varargin{i})),
 		case 'verbose',
 			verbose = varargin{i+1};
-			if ~isstring(verbose,'on','off'),
+			if ~isstringfma(verbose,'on','off'),
 				error('Incorrect value for property ''verbose'' (type ''help <a href="matlab:help InIntervals">InIntervals</a>'' for details).');
 			end
 			verbose = strcmp(verbose,'on');

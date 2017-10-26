@@ -60,7 +60,7 @@ for i = 1:2:length(varargin),
 	switch(lower(varargin{i})),
 		case 'shift',
 			shift = varargin{i+1};
-			if ~isstring(shift,'on','off'),
+			if ~isstringfma(shift,'on','off'),
 				error('Incorrect value for property ''shift'' (type ''help <a href="matlab:help Restrict">Restrict</a>'' for details).');
 			end
 

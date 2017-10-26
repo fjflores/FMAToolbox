@@ -78,13 +78,13 @@ for j = 1:2:length(varargin),
 
 		case 'info',
 			showInfo = lower(varargin{j+1});
-			if ~isstring(showInfo,'on','off'),
+			if ~isstringfma(showInfo,'on','off'),
 				error('Incorrect value for ''info'' (type ''help <a href="matlab:help DBExportGallery">DBExportGallery</a>'' for details).');
 			end
 
 		case 'code',
 			showCode = lower(varargin{j+1});
-			if ~isstring(showCode,'on','off'),
+			if ~isstringfma(showCode,'on','off'),
 				error('Incorrect value for ''code'' (type ''help <a href="matlab:help DBExportGallery">DBExportGallery</a>'' for details).');
 			end
 

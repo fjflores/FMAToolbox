@@ -119,7 +119,7 @@ for i = 1:2:length(varargin),
 
 		case 'type',
 			type = lower(varargin{i+1});
-			if ~isstring(type,'circular','linear'),
+			if ~isstringfma(type,'circular','linear'),
 				error('Incorrect value for property ''type'' (type ''help <a href="matlab:help Map">Map</a>'' for details).');
 			end
 
